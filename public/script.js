@@ -1,6 +1,6 @@
 document.getElementById("submit-btn").addEventListener("click", () => {
 
-    const url = "https://chunk-headerparser-5d3c53a20d9c.herokuapp.com/"
+    const url = "https://chunk-headerparser-5d3c53a20d9c.herokuapp.com/api/whoami"
     fetch (url)
         .then(response => response.json())
         .then(data => {
