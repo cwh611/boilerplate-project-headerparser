@@ -4,12 +4,12 @@ document.getElementById("submit-btn").addEventListener("click", () => {
     fetch (url)
         .then(response => response.json())
         .then(data => {
-            document.getElementById("ip-address").textContent = JSON.stringify(data.ipaddress, null, 2);
-            document.getElementById("preferred-language").textContent = JSON.stringify(data.language, null, 2);
-            document.getElementById("software").textContent = JSON.stringify(data.software, null, 2)
+            document.getElementById("ip-address").textContent = `IP Address: ${data.ipaddress}`;
+            document.getElementById("preferred-language").textContent = `Language(s): ${data.language}`;
+            document.getElementById("software").textContent = `Software: ${data.software}`
         })
         .catch(error => {
-            alert("Server error - please try again")
+            alert(`Server error - please try again (${error})`)
         })
 
 })
