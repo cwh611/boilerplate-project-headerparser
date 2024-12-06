@@ -1,4 +1,5 @@
 document.getElementById("submit-btn").addEventListener("click", () => {
+
     const url = "https://chunk-headerparser-5d3c53a20d9c.herokuapp.com/"
     fetch (url)
         .then(response => response.json())
@@ -10,4 +11,5 @@ document.getElementById("submit-btn").addEventListener("click", () => {
         .catch(error => {
             alert("Server error - please try again")
         })
+
 })
