@@ -9,7 +9,7 @@ document.getElementById("submit-btn").addEventListener("click", () => {
             document.getElementById("software").textContent = `Software: ${data.software}`
         })
         .catch(error => {
-            alert("Server error - please try again")
+            alert(`Server error - please try again (${error})`)
         })
 
 })
